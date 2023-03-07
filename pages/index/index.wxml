@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<form bindsubmit='formCompare'>
+  <view class="wrapper">
+    <view>
+      <text>请输入第1个数字：</text>
+      <input type="number" bindchange="numchange" data-id='num1' name='name1'/>
+    </view>
+    <view>
+      <text>请输入第2个数字：</text>
+      <input type="number" bindchange='numchange' data-id='num2' name='name2'/>
+    </view>
+    <!-- <button bindtap='compare'
+    id='outer'>
+        比较
+    </button> -->
+    <button form-type="submit">比较</button>
+    <view>
+      <text>比较结果：{{result}}</text>
+      <!-- <text>比较结果：</text> -->
+      <!-- <block wx:if='{{num1>num2}}'>
+        <text>第1个数大</text>
+      </block>
+      <block wx:elif="{{num1<num2}}">
+        <text>第2个数大</text>
+      </block>
+      <block wx:else='{{num1==num2}}'>
+        <text>两数相等</text>
+      </block> -->
+    </view>
+  </view>
+</form>
